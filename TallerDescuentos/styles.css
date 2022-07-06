@@ -10,33 +10,32 @@ body {
     text-align: center;
 }
 .header-title {
-    color: #088C83;
+    color: #48F078;
 }
 .header-text {
-    color: #088C83;
+    color: #48F078;
     text-decoration: underline;
 }
 .section {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: #BFD7EA;
-    width: 400px;
-    height: 450px;
+    background-color: #57FAB3;
+    opacity: 80%;
+    width: 1000px;
+    height: 490px;
     border-radius: 25px;
 }
 .section-title {
     width: 300px;
-    margin: 15px;
     color: white;
-    text-align: center;
+    text-align: left;
 }
 .form {
     display: flex;
     flex-direction: column;
     width: 300px;
     height: 500px;
+    margin-right: 100px;
 }
 .label-1 {
     margin-bottom: 7px;
@@ -50,21 +49,20 @@ body {
     text-align: center;
 }
 .label-2 {
-    margin-bottom: 7px;
+    margin-bottom: 7px;   
     color: white;
 }
 .input-2 {
     border-radius: 50px;
     border: none;
     height: 24px;
-    margin-bottom: 7px;
+    margin-bottom: 7px;    
     text-align: center;
 }
 .resultado {
     width: 300px;
     height: 150px;
-    background-color: black;
-    opacity: 15%;
+    background-color: rgba(0,0,0,0.1);
     color: white;
     border-radius: 16px;
     margin: auto;
@@ -72,4 +70,31 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.section .image {
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    margin: 110px 0 0 80px;
+}
+@media (max-width: 640px) {
+    .section {
+        width: 90%;
+        text-align: center;
+    }
+    .header-title {
+        width: 92%;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .section .image {
+        display: none;
+    }
+    .form {
+        width: 80%;
+        margin: 0;
+        position: absolute;
+        text-align: center;
+    }    
 }
